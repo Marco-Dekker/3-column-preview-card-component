@@ -1,0 +1,190 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 2rem;
+    padding-top: 10%;
+    
+    
+}
+
+
+.container {
+    background-color: hsl(0, 0%, 95%);
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.4);
+    
+    
+}
+@media(min-width: 1200px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        };
+    p {
+        padding: 50px 65px 50px 50px;
+    }
+}
+
+.card {
+    /* margin: auto; */
+    max-width: 325px;
+}
+
+
+    
+        
+
+/* Cards individual */
+
+/* Sedan */
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+.sedan .btn {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%)
+}
+.sedan .btn:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%)
+}
+
+/* suv */
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.suv .btn {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%)
+}
+.suv .btn:hover {
+    background-color: hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%)
+}
+
+/* luxury */
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+.luxury .btn {
+    background-color: hsl(0, 0%, 95%);
+    color:hsl(179, 100%, 13%)
+}
+.luxury .btn:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%)
+}
+
+
+
+.btn {
+    display: inline-block;
+    color:hsl(0, 0%, 95%);
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 6px 28px;
+    margin: 10px 50px 40px 50px;
+    border-radius: 35px;
+    font-family: "Lexend Deca";
+}
+/* @media(min-width: 375px){
+   
+    .btn {
+        margin:0px 0px 50px 50px;
+    }
+    
+} */
+p {
+    font-family: "Lexend Deca";
+    display: inline-block;
+    padding: 30px 65px 80px 50px;
+    color: hsl(0, 0%, 95%);
+}
+
+
+h1 {
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    padding: 0px 50px 0px 50px;
+    color:hsl(0, 0%, 95%)
+}
+
+/* Icoon en animatie*/
+
+img {
+    padding: 50px 0px 30px 50px;
+    animation-name: run;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+@keyframes run {
+    from{transform: translateX(0);}
+    to{transform: translateX(170px);}
+}
+
+
+/* Challenge info */
+.attribution { 
+    
+    font-size: 11px
+    ; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
